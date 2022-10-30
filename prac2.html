@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 사용해 반응형 페이지 만들기</title>
+    <script src="https://kit.fontawesome.com/ac0e78004e.js" crossorigin="anonymous"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+    </style>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-plane" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></i>
+          So-trip
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">해외여행</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">국내여행</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">항공</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">호텔</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">투어/입장권</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">이벤트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">커뮤니티</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/image2/camera-1130731_1280.jpg" class="d-block w-100" alt="trip" style="opacity: 0.7" />
+        </div>
+        <form class="row g-3 position-absolute" style="width: 30vw; top: 20vh; left: 10vw">
+          <h3 style="font-family: 'Gamja Flower', cursive">어디로 떠나고 싶으신가요?</h3>
+          <div class="col-md-6">
+            <label for="start" class="form-label">출발지</label>
+            <input type="text" class="form-control" id="inputText" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">출발일</label>
+            <input type="date" class="form-control" id="inputPassword4" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">여행지</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="어디로 갈까요?" />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-secondary">search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div style="margin-left: 5vw; margin-top: 5vh">
+      <h2 style="font-family: 'Jua', sans-serif">추천 테마 여행</h2>
+    </div>
+    <div class="d-flex flex-row justify-content-around">
+      <div class="card" style="width: 18rem">
+        <img src="/image2/그리스.jpg" class="card-img-top" alt="그리스" />
+        <div class="card-body">
+          <h5 class="card-title">그리스 매력포인트</h5>
+          <p class="card-text">세계적 문화유산과 아름다운 자연경관이 조화를 이루는 나라, <br />그리스로 떠나보아요.</p>
+          <a href="#" class="btn btn-primary">둘러보러 가기</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/image2/대만.jpg" class="card-img-top" alt="대만" />
+        <div class="card-body">
+          <h5 class="card-title">대만 야시장 투어</h5>
+          <p class="card-text">
+            대만 3대 야시장 <br />스린, 닝샤, 라오허제 야시장 <br />
+            추천 메뉴 및 가는 방법
+          </p>
+          <a href="#" class="btn btn-primary">둘러보러 가기</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/image2/알프스.jpg" class="card-img-top" alt="알프스" />
+        <div class="card-body">
+          <h5 class="card-title">자연의 명작 알프스</h5>
+          <p class="card-text">신이 빚어낸 보석, <br />알프스 융프라우에서 감동 느끼기</p>
+          <a href="#" class="btn btn-primary">둘러보러 가기</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
